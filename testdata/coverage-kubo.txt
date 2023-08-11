@@ -1,0 +1,10 @@
+{"Time":"2023-08-11T12:06:01.275263+02:00","Action":"start","Package":"github.com/ipfs/kubo/config/serialize"}
+{"Time":"2023-08-11T12:06:01.560045+02:00","Action":"run","Package":"github.com/ipfs/kubo/config/serialize","Test":"TestConfig"}
+{"Time":"2023-08-11T12:06:01.560134+02:00","Action":"output","Package":"github.com/ipfs/kubo/config/serialize","Test":"TestConfig","Output":"=== RUN   TestConfig\n"}
+{"Time":"2023-08-11T12:06:01.561856+02:00","Action":"output","Package":"github.com/ipfs/kubo/config/serialize","Test":"TestConfig","Output":"--- PASS: TestConfig (0.00s)\n"}
+{"Time":"2023-08-11T12:06:01.561871+02:00","Action":"pass","Package":"github.com/ipfs/kubo/config/serialize","Test":"TestConfig","Elapsed":0}
+{"Time":"2023-08-11T12:06:01.561893+02:00","Action":"output","Package":"github.com/ipfs/kubo/config/serialize","Output":"PASS\n"}
+{"Time":"2023-08-11T12:06:01.564805+02:00","Action":"output","Package":"github.com/ipfs/kubo/config/serialize","Output":"\tgithub.com/ipfs/go-ipfs-util\tcoverage: 0.0% of statements in github.com/ipfs/go-ipfs-util, github.com/ipfs/kubo/config/serialize\n"}
+{"Time":"2023-08-11T12:06:01.564828+02:00","Action":"output","Package":"github.com/ipfs/kubo/config/serialize","Output":"\tgithub.com/ipfs/kubo/config/serialize\tcoverage: 70.4% of statements in github.com/ipfs/go-ipfs-util, github.com/ipfs/kubo/config/serialize\n"}
+{"Time":"2023-08-11T12:06:01.565796+02:00","Action":"output","Package":"github.com/ipfs/kubo/config/serialize","Output":"ok  \tgithub.com/ipfs/kubo/config/serialize\t0.290s\tcoverage: 0.0% of statements in github.com/ipfs/go-ipfs-util, github.com/ipfs/kubo/config/serialize\n"}
+{"Time":"2023-08-11T12:06:01.565824+02:00","Action":"pass","Package":"github.com/ipfs/kubo/config/serialize","Elapsed":0.291}

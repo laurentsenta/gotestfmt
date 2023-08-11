@@ -1,0 +1,79 @@
+[
+  {
+    "action": "run",
+    "package": "github.com/ipfs/kubo/config/serialize",
+    "version": "",
+    "test": "TestConfig",
+    "elapsed": "0s",
+    "output": null,
+    "cached": false,
+    "coverage": null,
+    "json": true
+  },
+  {
+    "action": "pass",
+    "package": "github.com/ipfs/kubo/config/serialize",
+    "version": "",
+    "test": "TestConfig",
+    "elapsed": "0s",
+    "output": null,
+    "cached": false,
+    "coverage": null,
+    "json": true
+  },
+  {
+    "action": "pass-final",
+    "package": "github.com/ipfs/kubo/config/serialize",
+    "version": "",
+    "test": "",
+    "elapsed": "0s",
+    "output": null,
+    "cached": false,
+    "coverage": null,
+    "json": true
+  },
+  {
+    "action": "coverage",
+    "package": "github.com/ipfs/kubo/config/serialize",
+    "version": "",
+    "test": "",
+    "elapsed": "0s",
+    "output": null,
+    "cached": false,
+    "coverage": 0,
+    "json": true
+  },
+  {
+    "action": "coverage",
+    "package": "github.com/ipfs/kubo/config/serialize",
+    "version": "",
+    "test": "",
+    "elapsed": "0s",
+    "output": null,
+    "cached": false,
+    "coverage": 70.4,
+    "json": true
+  },
+  {
+    "action": "pass",
+    "package": "github.com/ipfs/kubo/config/serialize",
+    "version": "",
+    "test": "",
+    "elapsed": "290ms",
+    "output": null,
+    "cached": false,
+    "coverage": 0,
+    "json": true
+  },
+  {
+    "action": "stdout",
+    "package": "",
+    "version": "",
+    "test": "",
+    "elapsed": "0s",
+    "output": "",
+    "cached": false,
+    "coverage": null,
+    "json": false
+  }
+]
