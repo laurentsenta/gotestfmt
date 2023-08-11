@@ -7,8 +7,8 @@ import (
 	"path/filepath"
 	"strings"
 
-	"github.com/gotesttools/gotestfmt/v2"
-	"github.com/gotesttools/gotestfmt/v2/renderer"
+	"github.com/laurentsenta/gotestfmt/v2"
+	"github.com/laurentsenta/gotestfmt/v2/renderer"
 )
 
 // ciEnvironments maps environment variables to directories to check for templates.

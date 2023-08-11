@@ -7,9 +7,9 @@ import (
 	"os"
 	"path"
 
-	"github.com/gotesttools/gotestfmt/v2/parser"
-	"github.com/gotesttools/gotestfmt/v2/renderer"
-	"github.com/gotesttools/gotestfmt/v2/tokenizer"
+	"github.com/laurentsenta/gotestfmt/v2/parser"
+	"github.com/laurentsenta/gotestfmt/v2/renderer"
+	"github.com/laurentsenta/gotestfmt/v2/tokenizer"
 )
 
 //go:embed .gotestfmt/*.gotpl

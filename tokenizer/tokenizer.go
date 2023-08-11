@@ -413,6 +413,8 @@ func parseLine(currentState state, line []byte, output chan<- Event) state {
 		line = []byte(strings.TrimRight(*jsonLine.Output, "\r\n"))
 	}
 
+	// fmt.Println("============== line", string(line))
+
 	for _, stateTransition := range stateMachine {
 		if stateTransition.inputState != currentState {
 			continue
@@ -424,6 +426,8 @@ func parseLine(currentState state, line []byte, output chan<- Event) state {
 		}
 
 		if match := stateTransition.regexp.FindSubmatch(line); len(match) != 0 {
+			// fmt.Println("=> match", id, stateTransition.regexp, string(match[0]))
+
 			elapsed, err := getTimeElapsed(stateTransition.regexp, match, "Elapsed")
 			if err == nil {
 				coverageString := string(extract(stateTransition.regexp, match, "Coverage"))
@@ -456,6 +460,13 @@ func parseLine(currentState state, line []byte, output chan<- Event) state {
 				if jsonLine != nil && jsonLine.Elapsed != nil && *jsonLine.Elapsed > 0 {
 					elapsed = time.Duration(*jsonLine.Elapsed * float64(time.Second))
 				}
+
+				// log debug information: coverage.
+				// fmt.Println("COUCOU")
+				// fmt.Println("line", string(line))
+				// fmt.Println("stateTransition.regexp", stateTransition.regexp)
+				// log.Printf("coverage: %v", coveragePtr)
+
 				evt := Event{
 					Received: received,
 					Action:   stateTransition.action,
@@ -468,6 +479,8 @@ func parseLine(currentState state, line []byte, output chan<- Event) state {
 					Output:   extract(stateTransition.regexp, match, "Output"),
 					JSON:     jsonLine != nil,
 				}
+
+				// fmt.Println("=> evt", evt.Action, evt.Coverage)
 
 				output <- evt
 				return stateTransition.newState
